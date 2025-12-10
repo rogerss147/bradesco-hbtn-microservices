@@ -1,0 +1,7 @@
+﻿Microsservicos sao uma abordagem de desenvolvimento em que um sistema e dividido em pequenos servicos autonomos, cada um responsavel por uma funcao de negocio especifica, executados de forma independente e comunicando-se por APIs bem definidas.
+
+Em uma arquitetura monolitica, todas as funcionalidades residem em um unico codigo implantado como um bloco indivisivel, o que simplifica o inicio do projeto, mas aumenta o acoplamento e dificulta a evolucao. Ja uma arquitetura de microsservicos organiza o sistema em servicos pequenos, isolados e distribuidos, permitindo que cada peca utilize sua propria pilha tecnologica e seja implantada separadamente.
+
+Tres beneficios centrais dessa arquitetura sao: escalabilidade seletiva (escala-se apenas o servico que demanda mais recursos), resiliencia aprimorada (falhas ficam contidas em um servico e nao derrubam o sistema inteiro) e ciclos de entrega mais rapidos (equipes independentes desenvolvem, testam e implantam cada servico no seu ritmo).
+
+Os microsservicos se comunicam principalmente de duas formas: chamadas sincronas via HTTP/REST ou gRPC para interacoes em tempo real, e trocas assincronas por mensageria ou eventos publicados em filas e brokers, garantindo desacoplamento e tolerancia a picos de carga.

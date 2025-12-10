@@ -1,5 +1,4 @@
-﻿package com.example.demo;
-
+﻿
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +21,7 @@ public class MessageResource {
 
     @GetMapping("/login")
     public String login(@RequestParam(value = "user", required = false) String user,
-                        @RequestParam(value = "password", required = false) String password) {
+            @RequestParam(value = "password", required = false) String password) {
         if (isBlank(user) || isBlank(password)) {
             return MISSING_CREDENTIALS;
         }
